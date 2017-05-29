@@ -8,6 +8,8 @@ int main()
     int izbor;
     int MAX = 50;
     string prezimeIme[MAX];
+    unsigned long long brTelefona[MAX];
+    string adresa[MAX];
     ofstream datotekaUpisivanje;
     ifstream datotekaUcitavanje;
 
@@ -28,6 +30,12 @@ int main()
             cout << "Unesite ime i prezime: ";
             cin.ignore();
             getline(cin, prezimeIme[brojOsoba]);
+            //!Unos broja telefona i adresa
+            cout<<"Upisite broj telefona:";
+            cin>>brTelefona[brojOsoba];
+            cout<<"Unesite adresu:";
+            cin.ignore();
+            getline(cin,adresa[brojOsoba]);
             brojOsoba++;
         }
         else if( izbor == 2 )
