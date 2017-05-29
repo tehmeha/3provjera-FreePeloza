@@ -87,6 +87,11 @@ int main()
                 cout<<prezimeime[i] <<"\t" <<brojtelefona[i] <<"\t" << "\t"<<adresa;
                 break;
             }
+            if(brojtelefona==brojtelefona[i])
+            {
+                cout<<"Ne postoji u imeniku"<<endl;
+                postoji=false;
+            }
         }
         else if( izbor == 5 )
         {
@@ -97,10 +102,15 @@ int main()
             for(int i =0; i< brojOsoba; i++)
                 if(prezimeime==prezimeIme[i])
             {
-                cout<<"POstoji u telefonskom imeniku "<<endl;
+                cout<<"Postoji u telefonskom imeniku "<<endl;
                 postoji =true;
                 cout<<prezimeime[i] <<"\t" <<brojtelefona[i]<< "\t" << "\t" <<adresa;
                 break;
+             }
+             if(prezimeime==prezimeime[i])
+             {
+                 cout<<"Ne postoji u imeniku"<<endl;
+                 postoji=false;
              }
         }
         else if( izbor == 6 )
