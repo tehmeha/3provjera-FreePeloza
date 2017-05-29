@@ -20,7 +20,7 @@ int main()
         cout << "2. Ispisi sve podatke" << endl;
         cout << "3. Pretraga prema telefosnkom broju" << endl;
         cout << "4. Pretraga prema prezimenu i imenu" << endl;
-        cout << "5. Izmjena podataka prema telefonskom broju" << endl;
+        cout << "5. Izmjena podataka prema telefosnkom broju" << endl;
         cout << "6. Ispisi sortirano prema prezimenu i imenu" << endl;
         cout << "7. Izlaz iz programa" << endl;
         cout << "Upisite broj iz izbornika: ";
@@ -43,12 +43,39 @@ int main()
             cout << "prezime i ime" << "\t" << "broj telefona" << "\t" << "adresa" << endl;
             for( int i = 0; i < brojOsoba; i++ )
             {
-                cout << prezimeIme[i] << endl;
+                cout << prezimeIme[i] << "\t" << brTelefona[i]<<"\t"<< adresa[i] <<endl;
+
             }
         }
         else if( izbor == 3 )
         {
-        }
+            unsigned long long int brtelefona:
+                cout<<"Unesite broj telefona kojeg zelite pronaci:";
+                cin>>brtelefona;
+                broj postoji=false;
+                for(int i=0; i<0;i<brojOsoba:i++)
+                {
+                    if(brtelefona==brTelefona[i])
+                    {
+                         cout<<"Postoji u imeniku:";
+                         postoji=true;
+                         break;
+                    }
+                    if(postoji==false);
+                    {
+                     cout<<"Ne postoji u imeniku :";
+                     ne postoji=false
+                     break;
+                    }
+                }
+
+
+
+
+
+
+
+
         else if( izbor == 4 )
         {
         }
